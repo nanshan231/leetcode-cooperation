@@ -1,7 +1,7 @@
 #!/bin/bash
 PROG_NAME=$0
 ACTION=$1
-APP_HOME=/home/admin/leetcode-cooperation
+APP_HOME=/home/admin/application
 
 mkdir -p ${APP_HOME}
 
