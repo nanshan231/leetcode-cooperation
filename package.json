@@ -1,0 +1,22 @@
+{
+  "name": "leetcode-cooperation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanshan231/leetcode-cooperation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanshan231/leetcode-cooperation/issues"
+  },
+  "homepage": "https://github.com/nanshan231/leetcode-cooperation#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
