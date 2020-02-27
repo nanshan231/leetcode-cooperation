@@ -1,13 +1,25 @@
 version: "3"
 services:
-  app:
-    build: .
-    depends_on:
-      - postgres
+  web:
+    image: node
+    command: npm start
     ports:
       - "3000:3000"
-
-  postgres:
-    image: postgres
+    links:
+      - db
+    working_dir: /src
     environment:
-      POSTGRES_PASSWORD: postgres
+      SEQ_DB: mydatabase
+      SEQ_USER: username
+      SEQ_PW: pgpassword
+      PORT: 3000
+      DATABASE_URL: postgres://username:pgpassword@db:5432/mydatabase
+    volumes:
+      - ./:/src
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: pgpassword
